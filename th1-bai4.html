@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Employee Form</title>
+    <link rel="stylesheet" href="bai4.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Basic Info</h2>
+
+      <div class="row">
+        <label>Employee ID</label>
+        <span>9</span>
+      </div>
+
+      <div class="row">
+        <label>Last Name</label>
+        <span>Dodsworth</span>
+      </div>
+
+      <div class="row">
+        <label>First Name</label>
+        <input type="text" value="Anne" />
+      </div>
+
+      <div class="row">
+        <label>Gender</label>
+        <div class="radio">
+          <label><input type="radio" name="gender" /> Male</label>
+          <label><input type="radio" name="gender" checked /> Female</label>
+          <label><input type="radio" name="gender" /> XXX</label>
+          <label><input type="radio" name="gender" /> ZZZ</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <label>Title</label>
+        <input type="text" value="Sales Representative" />
+      </div>
+
+      <div class="row">
+        <label>Suffix</label>
+        <input type="text" value="Ms." />
+      </div>
+
+      <div class="row">
+        <label>BirthDate</label>
+        <input type="text" value="1969-07-02 00:00:00" />
+      </div>
+
+      <div class="row">
+        <label>HireDate</label>
+        <input type="text" value="1994-11-15 00:00:00" />
+      </div>
+
+      <div class="row">
+        <label>Reports To</label>
+        <select>
+          <option>Buchanan</option>
+        </select>
+      </div>
+
+      <h2>Contact Info</h2>
+
+      <div class="row">
+        <label>Email</label>
+        <input type="email" value="name@example.com" />
+      </div>
+
+      <div class="row">
+        <label>Address</label>
+        <input type="text" value="7 Houndstooth Rd." />
+      </div>
+
+      <div class="row">
+        <label>City</label>
+        <input type="text" value="London" />
+      </div>
+
+      <div class="row">
+        <label>Postal Code</label>
+        <input type="text" value="WG2 7LT" />
+      </div>
+
+      <div class="row">
+        <label>Country</label>
+        <select>
+          <option>Russian Federation</option>
+        </select>
+      </div>
+
+      <h2>Optional Info</h2>
+
+      <div class="row">
+        <label>Notes</label>
+        <textarea rows="4">
+Anne has a BA degree in English from St. Lawrence College.
+She is fluent in French and German.
+        </textarea>
+      </div>
+
+      <div class="row">
+        <label>Preferred Shift</label>
+        <label><input type="checkbox" /> Regular</label>
+        <label><input type="checkbox" checked /> Grave Yard</label>
+      </div>
+
+      <div class="buttons">
+        <button class="submit">Submit</button>
+        <button class="cancel">Cancel</button>
+      </div>
+    </div>
+  </body>
+</html>

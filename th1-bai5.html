@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Giao diện Quản lý Nhân sự</title>
+    <link rel="stylesheet" href="bai5.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="main-container">
+        <nav class="navbar">
+          <div class="nav-links">
+            <span class="logo">HR Management</span>
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+          </div>
+          <div class="search-box">
+            <input type="text" placeholder="Search..." />
+            <button class="btn-search">Search</button>
+          </div>
+        </nav>
+
+        <div class="content">
+          <div class="header-table">
+            <h2>Employee</h2>
+            <button class="btn-add">+ Add</button>
+          </div>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Position</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Fatima Beatriz</td>
+                <td>Fatima Beatriz@gmail.com</td>
+                <td>0985674321</td>
+                <td>Staff</td>
+                <td>
+                  <button class="btn-edit">Edit</button>
+                  <button class="btn-delete">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Gabriel Hanna</td>
+                <td>Gabriel Hanna@gmail.com</td>
+                <td>0353674231</td>
+                <td>Staff</td>
+                <td>
+                  <button class="btn-edit">Edit</button>
+                  <button class="btn-delete">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Charles Diya</td>
+                <td>Charles Diya@gmail.com</td>
+                <td>0347658833</td>
+                <td>Staff</td>
+                <td>
+                  <button class="btn-edit">Edit</button>
+                  <button class="btn-delete">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="modal-container">
+        <div class="modal-header">
+          <span>New Employee</span>
+          <span class="close-btn">&times;</span>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col">
+              <label>Name</label>
+              <input type="text" />
+            </div>
+            <div class="col">
+              <label>Email</label>
+              <input type="text" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label>Phone</label>
+              <input type="text" />
+            </div>
+            <div class="col">
+              <label>Position</label>
+              <select>
+                <option>-- Select Position --</option>
+                <option>Staff</option>
+                <option>Manager</option>
+                <option>CEO</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label>Sex</label>
+              <div class="radio-group">
+                <label><input type="radio" name="sex" /> Male</label>
+                <label><input type="radio" name="sex" /> Female</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn-save">Save</button>
+          <button class="btn-cancel">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
